@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="one-piece">
+    <div class="container">
+        <h1>TIC TAC TOE</h1>
+        <!-- Table representa a grade 3x3–>
+        <table>
+            <tbody>
+                <tr>
+                    <td><img src="img/transp.png" alt=" " id="c1" onclick="playMove(this.id)" /></td>
+                    <td><img src="img/transp.png" alt=" " id="c2" onclick="playMove(this.id)" /></td>
+                    <td><img src="img/transp.png" alt=" " id="c3" onclick="playMove(this.id)" /></td>
+                </tr>
+                <tr>
+                    <td><img src="img/transp.png" alt=" " id="c4" onclick="playMove(this.id)" /></td>
+                    <td><img src="img/transp.png" alt=" " id="c5" onclick="playMove(this.id)" /></td>
+                    <td><img src="img/transp.png" alt=" " id="c6" onclick="playMove(this.id)" /></td>
+                </tr>
+                <tr>
+                    <td><img src="img/transp.png" alt=" " id="c7" onclick="playMove(this.id)" /></td>
+                    <td><img src="img/transp.png" alt=" " id="c8" onclick="playMove(this.id)" /></td>
+                    <td><img src="img/transp.png" alt=" " id="c9" onclick="playMove(this.id)" /></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- Controles para reiniciar o jogo e ativar/desativar o modo computador -->
+        <div class="controls">
+            <!-- <label>
+                <input type="checkbox" id="cpu" /> <b>JOGAR CONTRA O PC</b>
+            </label> -->
+            <div class="theme-switch">
+                <div class="checkbox-wrapper-8">
+                    JOGAR CONTRA O PC
+                    <input class="tgl tgl-skewed" id="cpu" type="checkbox" onchange="toggleCpuMode()"/>
+                    <label class="tgl-btn" data-tg-off="OFF" data-tg-on="ON" for="cpu"></label>
+                </div>
+            </div>
+            <button onclick="resetGame()" id="reset">Resetar</button>
+        </div>
+
+        <script src="game.js"></script>
+        <h2><a href="/api/index.html">VOLTAR</a></h2>
+    </div>
+    
+    <!-- Seletor de temas -->
+    <footer class="footer">
+        <div class="theme-selector">
+            <button onclick="changeTheme('one-piece')">One Piece</button>
+            <button onclick="changeTheme('death')">Death Note</button>
+            <button onclick="changeTheme('dragon-ball')">Dragon Ball</button>
+            <button onclick="changeTheme('gow')">God Of War</button>
+        </div>
+    </footer>
+    
+</body>
+
+</html>
