@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API - Consultar CEP</title>
+    <style>
+        body {
+            background-image: url(https://wallpapertag.com/wallpaper/full/1/a/1/350829-widescreen-website-background-1920x1080-windows-xp.jpg);
+            color: black;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #bgButton {
+            position: absolute;
+            bottom: 1%;
+            left: 1%;
+            border-radius: 5px;
+            border: 0;
+            color: white;
+            background-color: gray;
+            cursor: pointer;
+        }
+
+        #info {
+            display: grid;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>API - Consultar CEP</h2>
+
+    <form action="#" method="post" name="form_cep" id="form_cep">
+        <label for="cep">Informe o seu CEP:</label>
+        <input type="number" name="cep" id="cep" placeholder="Digite o seu CEP..." required autocomplete="off"
+            maxlength="8">
+        <input type="submit" value="Buscar" id="buscar" name="buscar"> <!-- onclick="return teste()"-->
+    </form>
+
+    <div id="info"></div>
+    
+    <h2><a href="/api/index.html">Voltar</a></h2>
+
+</body>
+<script src="script.js"></script>
+
+</html>

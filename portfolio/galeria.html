@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Galeria</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .carousel {
+            max-width: 800px;
+            margin: 20px auto;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .carousel-images {
+            display: flex;
+            animation: slide 20s infinite;
+        }
+
+        .carousel-images img {
+            width: calc(100% - 20px);
+            margin: 0 10px;
+            border-radius: 10px;
+        }
+
+        @keyframes slide {
+            0% {
+                transform: translateX(0);
+            }
+
+            20% {
+                transform: translateX(0);
+            }
+
+            25% {
+                transform: translateX(-100%);
+            }
+
+            45% {
+                transform: translateX(-100%);
+            }
+
+            50% {
+                transform: translateX(-200%);
+            }
+
+            70% {
+                transform: translateX(-200%);
+            }
+
+            75% {
+                transform: translateX(-300%);
+            }
+
+            100% {
+                transform: translateX(0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <h1>Galeria</h1>
+        <div class="carousel">
+            <div class="carousel-images">
+                <img src="/portfolio/img/1.jpg" alt="Imagem 1">
+                <img src="/portfolio/img/2.jpg" alt="Imagem 2">
+                <img src="/portfolio/img/3.jpg" alt="Imagem 3">
+                <img src="/portfolio/img/4.jpg" alt="Imagem 4">
+                <img src="/portfolio/img/5.jpg" alt="Imagem 5">
+                <img src="/portfolio/img/6.jpg" alt="Imagem 6">
+                <img src="/portfolio/img/7.jpg" alt="Imagem 7">
+                <img src="/portfolio/img/8.jpg" alt="Imagem 8">
+                <img src="/portfolio/img/9.jpg" alt="Imagem 9">
+                <img src="/portfolio/img/10.jpg" alt="Imagem 10">
+                <img src="/portfolio/img/12.jpg" alt="Imagem 11">
+                <img src="/portfolio/img/13.jpg" alt="Imagem 12">
+            </div>
+        </div>
+        <h2><a href="/portfolio/index.html">Voltar</a></h2>
+
+        <footer>
+            <p>Sophia Voncken - 2024</p>
+        </footer>
+    </center>
+</body>
+
+</html>
